@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+RewriteEngine on
+Options All -Indexes
+RewriteRule ^([a-z]+)$ index.php?id=$1
+php_value post_max_size 15M
+php_value upload_max_filesize 15M
